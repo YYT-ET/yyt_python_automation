@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.3 on win32)" generated="20180703 23:12:41.424">
+<suite id="s1" name="Testcases2" source="D:\PycharmProjects\pythonLessonDemo\RF_Project_0630\testcases2.robot">
+<test id="s1-t1" name="case1">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.kuaidi100.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180703 23:12:41.588" level="INFO">Opening browser 'chrome' to base url 'http://www.kuaidi100.com/'.</msg>
+<status status="PASS" starttime="20180703 23:12:41.588" endtime="20180703 23:12:46.353"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="welcome"]/a[2]</arg>
+</arguments>
+<msg timestamp="20180703 23:12:46.353" level="INFO">Clicking element 'xpath=//*[@id="welcome"]/a[2]'.</msg>
+<status status="PASS" starttime="20180703 23:12:46.353" endtime="20180703 23:12:46.565"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="name"]</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20180703 23:12:46.565" level="INFO">Typing text '15902127953' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20180703 23:12:46.565" endtime="20180703 23:12:46.860"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="password"]</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20180703 23:12:46.860" level="INFO">Typing text 'test123456' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20180703 23:12:46.860" endtime="20180703 23:12:46.952"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="submit"]</arg>
+</arguments>
+<msg timestamp="20180703 23:12:46.952" level="INFO">Clicking element 'xpath=//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20180703 23:12:46.952" endtime="20180703 23:12:47.683"></status>
+</kw>
+<doc>登录快递100</doc>
+<status status="PASS" starttime="20180703 23:12:41.588" endtime="20180703 23:12:47.683" critical="yes"></status>
+</test>
+<test id="s1-t2" name="case2">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="menu-track"]</arg>
+</arguments>
+<msg timestamp="20180703 23:12:47.687" level="INFO">Clicking element 'xpath=//*[@id="menu-track"]'.</msg>
+<status status="PASS" starttime="20180703 23:12:47.687" endtime="20180703 23:12:50.887"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="postid"]</arg>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20180703 23:12:50.887" level="INFO">Typing text '800112480770721865' into text field 'xpath=//*[@id="postid"]'.</msg>
+<status status="PASS" starttime="20180703 23:12:50.887" endtime="20180703 23:12:51.126"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="query"]</arg>
+</arguments>
+<msg timestamp="20180703 23:12:51.126" level="INFO">Clicking element 'xpath=//*[@id="query"]'.</msg>
+<status status="PASS" starttime="20180703 23:12:51.126" endtime="20180703 23:12:51.202"></status>
+</kw>
+<doc>查询一个快递单号</doc>
+<status status="PASS" starttime="20180703 23:12:47.683" endtime="20180703 23:12:51.202" critical="yes"></status>
+</test>
+<test id="s1-t3" name="case3">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="userName"]</arg>
+</arguments>
+<msg timestamp="20180703 23:12:51.202" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="userName"]'.</msg>
+<status status="PASS" starttime="20180703 23:12:51.202" endtime="20180703 23:12:51.284"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="userUrl"]/a</arg>
+</arguments>
+<msg timestamp="20180703 23:12:51.284" level="INFO">Clicking element 'xpath=//*[@id="userUrl"]/a'.</msg>
+<status status="PASS" starttime="20180703 23:12:51.284" endtime="20180703 23:12:51.414"></status>
+</kw>
+<kw name="Select Window" library="Selenium2Library">
+<doc>Selects browser window matching ``locator``.</doc>
+<arguments>
+<arg>title=我的查件记录 - 快递100个人版</arg>
+</arguments>
+<status status="PASS" starttime="20180703 23:12:51.414" endtime="20180703 23:12:51.849"></status>
+</kw>
+<doc>进入查询记录页面</doc>
+<status status="PASS" starttime="20180703 23:12:51.202" endtime="20180703 23:12:51.849" critical="yes"></status>
+</test>
+<test id="s1-t4" name="case4">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//tr[@class="bb"][1]</arg>
+</arguments>
+<status status="PASS" starttime="20180703 23:12:51.853" endtime="20180703 23:12:51.889"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//tr[1]/td[3]/a[@title]</arg>
+</arguments>
+<assign>
+<var>${check_number}</var>
+</assign>
+<msg timestamp="20180703 23:12:51.913" level="INFO">${check_number} = 88877960351852...</msg>
+<status status="PASS" starttime="20180703 23:12:51.889" endtime="20180703 23:12:51.913"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//tr[1]/td[3]/a[@title]</arg>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20180703 23:12:51.913" level="INFO">Verifying element '//tr[1]/td[3]/a[@title]' contains exact text '800112480770721865'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180703 23:12:52.230" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180703 23:12:51.929" endtime="20180703 23:12:52.230"></status>
+</kw>
+<msg timestamp="20180703 23:12:52.230" level="FAIL">The text of element '//tr[1]/td[3]/a[@title]' should have been '800112480770721865' but it was '88877960351852...'.</msg>
+<status status="FAIL" starttime="20180703 23:12:51.913" endtime="20180703 23:12:52.230"></status>
+</kw>
+<doc>判断是否查询过</doc>
+<status status="FAIL" starttime="20180703 23:12:51.849" endtime="20180703 23:12:52.230" critical="yes">The text of element '//tr[1]/td[3]/a[@title]' should have been '800112480770721865' but it was '88877960351852...'.</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20180703 23:12:41.424" endtime="20180703 23:12:52.234"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1">Critical Tests</stat>
+<stat pass="3" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" id="s1" name="Testcases2">Testcases2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
